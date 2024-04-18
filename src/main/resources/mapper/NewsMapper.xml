@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.ming.smartmedic.dao.NewsDao">
+
+
+    <resultMap id="NewsMap" type="cn.ming.smartmedic.domain.News">
+        <id property="id" column="id"/>
+        <result property="title" column="title"/>
+        <result property="content" column="content"/>
+        <result property="userId" column="user_id"/>
+        <result property="userName" column="user_name"/>
+        <result property="createTime" column="create_time" jdbcType="TIMESTAMP" />
+        <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+        <result property="isDeleted" column="is_deleted"/>
+    </resultMap>
+
+
+    <select id="countNews" parameterType="Map" resultType="Integer">
+        select count(*)
+        from t_sm_news
+        <where>
+            <if test="name != null and name != ''">
+                AND name LIKE CONCAT('%', #{name}, '%')
+            </if>
+            AND is_deleted = 0
+        </where>
+    </select>
+
+    <select id="listNews" parameterType="Map" resultMap="NewsMap">
+        select *
+        from t_sm_news
+        <where>
+            <if test="name != null and name != ''">
+                AND name LIKE CONCAT('%', #{name}, '%')
+            </if>
+            AND is_deleted = 0
+        </where>
+        ORDER BY create_time DESC
+        <if test="page != null">
+            LIMIT #{pageSize} OFFSET #{page}
+        </if>
+    </select>
+
+</mapper>
