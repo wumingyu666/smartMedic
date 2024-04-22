@@ -33,7 +33,8 @@ public class News {
 
     private Integer isDeleted;
 
-    private String Published;
+    private String published;
 
+    private String firstPicture;
 
 }

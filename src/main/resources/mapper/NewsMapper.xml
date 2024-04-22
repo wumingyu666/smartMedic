@@ -54,8 +54,8 @@
     <insert id="saveNews" parameterType="cn.ming.smartmedic.domain.News" useGeneratedKeys="true" keyProperty="id"
             keyColumn="id">
         INSERT INTO t_sm_news
-            (title, content, description, user_id, published)
-            VALUE (#{title},#{content},#{description},#{userId},#{published})
+            (title, content, description, user_id, published, first_picture)
+            VALUE (#{title},#{content},#{description},#{userId},#{published} ,#{firstPicture})
     </insert>
 
     <update id="updateNews" parameterType="BigInteger">

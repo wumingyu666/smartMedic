@@ -15,3 +15,7 @@ server:
   port: 80
 # 阿里云通义千问配置
 ai-key: sk-5e4131ddd09e406f9a5b656d000948b3
+
+cosSecretId: AKIDb3MYtO0b4Tkt4OaYIn4RPGVaQ3RaUAhz
+cosSecretKey: CQVPMHAyiMNaxWYXVft5KkGphnjZGDMR
+
