@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/blog?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    #设置成相对路径，方便部署到linux系统
+    url: jdbc:mysql:///smartmedicine?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    username: root
+    password: Wu18251923344.
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+logging:
+    level:
+      root: info
+      cn.ming: debug
+    file: log/smartmedic-dev.log
+
+# 阿里云通义千问配置
+ai-key: sk-5e4131ddd09e406f9a5b656d000948b3
