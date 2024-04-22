@@ -14,9 +14,8 @@
     <div class="ui container">
         <div class="ui inverted secondary menu stackable">
             <h2 class="ui teal header item">管理后台</h2>
-            <a href="#" th:href="@{/admin/blogs}" class=" m-item item m-mobile-hide"><i class="home icon"></i>博客</a>
-            <a href="#" th:href="@{/admin/types}" class="m-item item m-mobile-hide"><i class="idea icon"></i>分类</a>
-            <a href="#" th:href="@{/admin/tags}" class="m-item item m-mobile-hide"><i class="tags icon"></i>标签</a>
+            <a href="#" th:href="@{/v1/com/admin/news}" class=" m-item item m-mobile-hide"><i class="home icon"></i>新闻</a>
+            <a href="#" th:href="@{/v1/com/admin/diseases}" class="m-item item m-mobile-hide"><i class="idea icon"></i>常见病分类</a>
             <div class="right menu">
                 <div class="ui m-item dropdown item m-mobile-hide">
                     <div class="text">
@@ -49,7 +48,7 @@
     <div class="ui container">
        <div class="ui success large message">
            <h3>Hi!</h3>
-           <p>Ming，欢迎登录！</p>
+           <p th:text="${user.name} + '，欢迎登录'">Ming，欢迎登录！</p>
        </div>
     </div>
 </div>
@@ -83,7 +82,7 @@
             </div>
             <div class="seven wide column">
                 <h4 class="ui inverted header m-text-thin m-text-spaced">Blog</h4>
-                <p class="m-text-thin m-text-spaced m-opacity-mini">这是我的个人博客，会分享关于编程、写作、思考等的相关内容，希望能给来这里的人一些帮助。</p>
+                <p class="m-text-thin m-text-spaced m-opacity-mini">用药助手后台管理页面</p>
             </div>
         </div>
         <div class="ui inverted section divider"></div>

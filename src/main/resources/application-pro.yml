@@ -16,3 +16,6 @@ logging:
 
 server:
   port: 8081
+
+# 阿里云通义千问配置
+ai-key: sk-5e4131ddd09e406f9a5b656d000948b3

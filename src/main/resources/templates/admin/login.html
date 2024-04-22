@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <!--用于移动端-->
     <meta name="viewport" content="width=divice-width.initial-scale=1.0">
-    <title>博客管理</title>
+    <title>用药助手后台管理</title>
     <link rel='stylesheet prefetch' href='../../static/semantic/dist/semantic.min.css'>
     <link rel="stylesheet" href="../../static/css/me.css">
 </head>
@@ -19,7 +19,7 @@
                         管理后台登录
                     </div>
                 </h2>
-                <form class="ui large form" method="post" action="#" th:action="@{/admin/login}">
+                <form class="ui large form" method="post" action="#" th:action="@{/v1/com/admin/login}">
                     <div class="ui  segment">
                         <div class="field">
                             <div class="ui left icon input">
@@ -33,7 +33,7 @@
                                 <input type="password" name="password" placeholder="密码">
                             </div>
                         </div>
-                        <button class="ui fluid large teal submit button">登陆</button>
+                        <button class="ui fluid large teal submit button">登录</button>
                     </div>
                     <div class="ui error mini message"></div>
                     <div class="ui mini negative message" th:unless="${#strings.isEmpty(message)}" th:text="${message}"></div>
@@ -57,7 +57,7 @@
                 </div>
             </div>
             <div class="three wide column">
-                <h4 class="ui inverted header m-text-thin m-text-spaced">最新博客</h4>
+                <h4 class="ui inverted header m-text-thin m-text-spaced">最新文章</h4>
                 <div class="ui inverted link list">
                     <a href="#" class="item">用户故事(User Story)</a>
                     <a href="#" class="item">用户故事(User Story)</a>
@@ -73,7 +73,7 @@
             </div>
             <div class="seven wide column">
                 <h4 class="ui inverted header m-text-thin m-text-spaced">Blog</h4>
-                <p class="m-text-thin m-text-spaced m-opacity-mini">这是我的个人博客，会分享关于编程、写作、思考等的相关内容，希望能给来这里的人一些帮助。</p>
+                <p class="m-text-thin m-text-spaced m-opacity-mini">用药助手后台管理页面。</p>
             </div>
         </div>
         <div class="ui inverted section divider"></div>

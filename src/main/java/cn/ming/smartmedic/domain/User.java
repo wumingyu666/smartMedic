@@ -5,35 +5,31 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.math.BigInteger;
 
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class News {
-
+public class User {
     private BigInteger id;
 
-    private String title;
+    private String nickname;
 
-    private String content;
+    private String name;
 
-    private String description;
+    private String password;
 
-    private BigInteger userId;
+    private String email;
 
-    private String userName;
+    private String avator;
+
+    private Integer type;
 
     private String createTime;
 
     private String updateTime;
 
     private Integer isDeleted;
-
-    private String Published;
-
-
 }
