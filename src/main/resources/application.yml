@@ -20,4 +20,6 @@ cosSecretId: xx
 cosSecretKey: xx
 
 smartMedicBucket: smart-medic-1302466894
+smartMedicBucketUrl: https://smart-medic-1302466894.cos.ap-shanghai.myqcloud.com/
+
 

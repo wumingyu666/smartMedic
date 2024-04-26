@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>cn.ming</groupId>
-    <artifactId>blog-ming</artifactId>
+    <artifactId>smartMedic</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>blog-ming</name>
-    <description>Demo project for Spring Boot</description>
+    <name>smartMedic</name>
+    <description>ai smartMedic</description>
     <properties>
         <java.version>1.8</java.version>
         <thymeleaf-version>3.0.2.RELEASE</thymeleaf-version>

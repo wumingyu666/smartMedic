@@ -55,7 +55,7 @@ public class AdminNewsController {
     public String input(Model model) {
         model.addAttribute("news", new News());
 
-        return "v1/com/admin/news-input";
+        return "admin/news-input";
     }
 
     @GetMapping("/news/{id}/input")

@@ -2,6 +2,7 @@ package cn.ming.smartmedic.Service.Impl;
 
 import cn.ming.smartmedic.Service.CosService;
 import cn.ming.smartmedic.config.CosClientFactory;
+import cn.ming.smartmedic.utils.ImageUtils;
 import com.qcloud.cos.exception.CosClientException;
 import com.qcloud.cos.exception.CosServiceException;
 import com.qcloud.cos.model.*;
@@ -11,6 +12,8 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.io.File;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 import static com.qcloud.cos.demo.BucketRefererDemo.cosClient;
@@ -25,14 +28,45 @@ public class CosServiceImpl implements CosService {
     @Value("${smartMedicBucket}")
     private String bucketName;
 
+    @Value("${smartMedicBucketUrl}")
+    private String bucketUrl;
+
     @Override
     public String uploadImage(File file) {
-        String cosImagePath = file.getName() + "-" + System.currentTimeMillis();
+        String cosImagePath = genUploadImagePath(file.getName());
         PutObjectRequest putObjectRequest = new PutObjectRequest(bucketName, cosImagePath, file);
-        PutObjectResult res = cosClient.putObject(putObjectRequest);
+        PutObjectResult res = config.cosClient.putObject(putObjectRequest);
         log.info("upload image res:{}", res);
 
-        return cosImagePath;
+        return bucketUrl + cosImagePath;
+    }
+
+    public static String genUploadImagePath(String fileName) {
+        // 找到最后一个 . 的位置
+        int lastIndex = fileName.lastIndexOf(".");
+
+        // 截取不包含扩展名的部分
+        String nameWithoutExtension = fileName.substring(0, lastIndex);
+        String extension = fileName.substring(lastIndex + 1);
+
+        // 获取当前时间的毫秒值
+        long time = System.currentTimeMillis();
+
+        // 格式化时间
+        LocalDateTime now = LocalDateTime.now();
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyyMMddHHmmssSSS");
+        String formattedTime = now.format(formatter);
+
+        // 重新拼接文件名
+        String newFileName = String.format("%s_%s.%s", nameWithoutExtension, formattedTime, extension);
+
+        System.out.println("New file name: " + newFileName);
+        return newFileName;
+    }
+
+    public static void main(String[] args) {
+        CosServiceImpl cosService = new CosServiceImpl();
+        CosServiceImpl.genUploadImagePath("tmp/image/1234.png");
     }
 
     public void listObjects() {

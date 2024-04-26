@@ -44,7 +44,7 @@
     </select>
 
     <select id="getNews" parameterType="Integer" resultType="cn.ming.smartmedic.domain.News">
-        select *
+        select id,title,content,description,create_time as createTime,update_time as updateTime,published,first_picture as firstPicture
         from t_sm_news
         <where>
             id = #{id} AND is_deleted = 0
@@ -64,7 +64,8 @@
         content = #{content},
         description = #{description},
         user_id = #{userId},
-        published = #{published}
+        published = #{published},
+        first_picture = #{firstPicture}
         <where>
             id = #{id}
         </where>
