@@ -1640,3 +1640,184 @@ Caused by: java.sql.SQLSyntaxErrorException: Unknown column 'userId' in 'field l
 2024-04-26 11:17:07.089 DEBUG 41717 --- [http-nio-80-exec-1] cn.ming.smartmedic.dao.NewsDao.listNews  : ==>  Preparing: select id,title,content,create_time as createTime,update_time as updateTime,published from t_sm_news WHERE is_deleted = 0 ORDER BY create_time DESC LIMIT ? OFFSET ? 
 2024-04-26 11:17:07.090 DEBUG 41717 --- [http-nio-80-exec-1] cn.ming.smartmedic.dao.NewsDao.listNews  : ==> Parameters: 10(Integer), 0(Integer)
 2024-04-26 11:17:07.106 DEBUG 41717 --- [http-nio-80-exec-1] cn.ming.smartmedic.dao.NewsDao.listNews  : <==      Total: 6
+2024-04-26 11:17:40.385  INFO 41717 --- [Thread-10] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2024-04-26 11:17:40.394  INFO 41717 --- [Thread-10] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-26 11:17:40.485  INFO 41717 --- [Thread-10] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2024-04-26 11:17:42.120  INFO 41717 --- [restartedMain] cn.ming.smartmedic.BlogMingApplication   : Starting BlogMingApplication on wumingyudeMacBook-Air.local with PID 41717 (/Users/wumingyu/javaPro/smartMedic/target/classes started by wumingyu in /Users/wumingyu/javaPro/smartMedic)
+2024-04-26 11:17:42.120 DEBUG 41717 --- [restartedMain] cn.ming.smartmedic.BlogMingApplication   : Running with Spring Boot v2.1.15.RELEASE, Spring v5.1.16.RELEASE
+2024-04-26 11:17:42.120  INFO 41717 --- [restartedMain] cn.ming.smartmedic.BlogMingApplication   : The following profiles are active: dev
+2024-04-26 11:17:42.429  INFO 41717 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-04-26 11:17:42.429  INFO 41717 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-04-26 11:17:42.434  INFO 41717 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5ms. Found 0 JDBC repository interfaces.
+2024-04-26 11:17:42.437  INFO 41717 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-04-26 11:17:42.437  INFO 41717 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-26 11:17:42.442  INFO 41717 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5ms. Found 0 JPA repository interfaces.
+2024-04-26 11:17:42.725  INFO 41717 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2024-04-26 11:17:42.727  INFO 41717 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-26 11:17:42.727  INFO 41717 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2024-04-26 11:17:42.755  INFO 41717 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-26 11:17:42.755  INFO 41717 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 633 ms
+2024-04-26 11:17:42.912 ERROR 41717 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : testWhileIdle is true, validationQuery not set
+2024-04-26 11:17:42.914  INFO 41717 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} inited
+2024-04-26 11:17:43.157  INFO 41717 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2024-04-26 11:17:43.226  INFO 41717 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2024-04-26 11:17:43.313  INFO 41717 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-26 11:17:43.368  INFO 41717 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-26 11:17:43.732  INFO 41717 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2024-04-26 11:17:43.746  WARN 41717 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-26 11:17:43.778  INFO 41717 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-04-26 11:17:43.989  INFO 41717 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2024-04-26 11:17:43.990  INFO 41717 --- [restartedMain] cn.ming.smartmedic.BlogMingApplication   : Started BlogMingApplication in 1.911 seconds (JVM running for 62.363)
+2024-04-26 11:17:43.992  INFO 41717 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-26 11:20:46.702  INFO 41717 --- [Thread-28] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2024-04-26 11:20:46.711  INFO 41717 --- [Thread-28] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-26 11:20:46.744  INFO 41717 --- [Thread-28] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} closed
+2024-04-26 11:40:49.082  INFO 42977 --- [restartedMain] cn.ming.smartmedic.BlogMingApplication   : Starting BlogMingApplication on wumingyudeMacBook-Air.local with PID 42977 (/Users/wumingyu/javaPro/smartMedic/target/classes started by wumingyu in /Users/wumingyu/javaPro/smartMedic)
+2024-04-26 11:40:49.087 DEBUG 42977 --- [restartedMain] cn.ming.smartmedic.BlogMingApplication   : Running with Spring Boot v2.1.15.RELEASE, Spring v5.1.16.RELEASE
+2024-04-26 11:40:49.087  INFO 42977 --- [restartedMain] cn.ming.smartmedic.BlogMingApplication   : The following profiles are active: dev
+2024-04-26 11:40:49.115  WARN 42977 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2024-04-26 11:40:49.160  INFO 42977 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-26 11:40:49.161  INFO 42977 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-26 11:40:50.032  INFO 42977 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-04-26 11:40:50.033  INFO 42977 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-04-26 11:40:50.049  INFO 42977 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13ms. Found 0 JDBC repository interfaces.
+2024-04-26 11:40:50.058  INFO 42977 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-04-26 11:40:50.059  INFO 42977 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-26 11:40:50.063  INFO 42977 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3ms. Found 0 JPA repository interfaces.
+2024-04-26 11:40:50.837  INFO 42977 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2024-04-26 11:40:50.854  INFO 42977 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-26 11:40:50.854  INFO 42977 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2024-04-26 11:40:50.915  INFO 42977 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-26 11:40:50.915  INFO 42977 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1754 ms
+2024-04-26 11:40:51.128 ERROR 42977 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : testWhileIdle is true, validationQuery not set
+2024-04-26 11:40:51.133  INFO 42977 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2024-04-26 11:40:51.555  INFO 42977 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2024-04-26 11:40:51.588  INFO 42977 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.17.Final}
+2024-04-26 11:40:51.589  INFO 42977 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000205: Loaded properties from resource hibernate.properties: {hibernate.bytecode.use_reflection_optimizer=false, hibernate.dialect.storage_engine=innodb}
+2024-04-26 11:40:51.661  INFO 42977 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2024-04-26 11:40:51.749  INFO 42977 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2024-04-26 11:40:52.404  INFO 42977 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-26 11:40:52.471  INFO 42977 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-26 11:40:53.284  INFO 42977 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2024-04-26 11:40:53.315  WARN 42977 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-26 11:40:53.349  INFO 42977 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-04-26 11:40:53.710  INFO 42977 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2024-04-26 11:40:53.712  INFO 42977 --- [restartedMain] cn.ming.smartmedic.BlogMingApplication   : Started BlogMingApplication in 5.633 seconds (JVM running for 6.68)
+2024-04-26 11:41:03.770  INFO 42977 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-26 11:41:03.772  INFO 42977 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-04-26 11:41:03.880  INFO 42977 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 107 ms
+2024-04-26 11:41:04.028 DEBUG 42977 --- [http-nio-80-exec-1] c.ming.smartmedic.dao.NewsDao.countNews  : ==>  Preparing: select count(*) from t_sm_news WHERE is_deleted = 0 
+2024-04-26 11:41:04.042 DEBUG 42977 --- [http-nio-80-exec-1] c.ming.smartmedic.dao.NewsDao.countNews  : ==> Parameters: 
+2024-04-26 11:41:04.848 DEBUG 42977 --- [http-nio-80-exec-1] c.ming.smartmedic.dao.NewsDao.countNews  : <==      Total: 1
+2024-04-26 11:41:04.851 DEBUG 42977 --- [http-nio-80-exec-1] cn.ming.smartmedic.dao.NewsDao.listNews  : ==>  Preparing: select id,title,content,create_time as createTime,update_time as updateTime,published from t_sm_news WHERE is_deleted = 0 ORDER BY create_time DESC LIMIT ? OFFSET ? 
+2024-04-26 11:41:04.851 DEBUG 42977 --- [http-nio-80-exec-1] cn.ming.smartmedic.dao.NewsDao.listNews  : ==> Parameters: 10(Integer), 0(Integer)
+2024-04-26 11:41:04.861 DEBUG 42977 --- [http-nio-80-exec-1] cn.ming.smartmedic.dao.NewsDao.listNews  : <==      Total: 6
+2024-04-26 11:41:28.865  INFO 42977 --- [Thread-18] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2024-04-26 11:41:28.874  INFO 42977 --- [Thread-18] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-26 11:41:28.908  INFO 42977 --- [Thread-18] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2024-04-26 11:41:33.956  WARN 43029 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2024-04-26 11:41:33.967  INFO 43029 --- [restartedMain] cn.ming.smartmedic.BlogMingApplication   : Starting BlogMingApplication on wumingyudeMacBook-Air.local with PID 43029 (/Users/wumingyu/javaPro/smartMedic/target/classes started by wumingyu in /Users/wumingyu/javaPro/smartMedic)
+2024-04-26 11:41:33.969 DEBUG 43029 --- [restartedMain] cn.ming.smartmedic.BlogMingApplication   : Running with Spring Boot v2.1.15.RELEASE, Spring v5.1.16.RELEASE
+2024-04-26 11:41:33.971  INFO 43029 --- [restartedMain] cn.ming.smartmedic.BlogMingApplication   : The following profiles are active: dev
+2024-04-26 11:41:34.043  INFO 43029 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-26 11:41:34.043  INFO 43029 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-26 11:41:35.050  INFO 43029 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-04-26 11:41:35.051  INFO 43029 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-04-26 11:41:35.073  INFO 43029 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18ms. Found 0 JDBC repository interfaces.
+2024-04-26 11:41:35.082  INFO 43029 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-04-26 11:41:35.082  INFO 43029 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-26 11:41:35.096  INFO 43029 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4ms. Found 0 JPA repository interfaces.
+2024-04-26 11:41:36.189  INFO 43029 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2024-04-26 11:41:36.207  INFO 43029 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-26 11:41:36.207  INFO 43029 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2024-04-26 11:41:36.274  INFO 43029 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-26 11:41:36.275  INFO 43029 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2232 ms
+2024-04-26 11:41:36.463 ERROR 43029 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : testWhileIdle is true, validationQuery not set
+2024-04-26 11:41:36.468  INFO 43029 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2024-04-26 11:41:36.782  INFO 43029 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2024-04-26 11:41:36.814  INFO 43029 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.17.Final}
+2024-04-26 11:41:36.815  INFO 43029 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000205: Loaded properties from resource hibernate.properties: {hibernate.bytecode.use_reflection_optimizer=false, hibernate.dialect.storage_engine=innodb}
+2024-04-26 11:41:36.881  INFO 43029 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2024-04-26 11:41:36.957  INFO 43029 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2024-04-26 11:41:37.149  INFO 43029 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-26 11:41:37.196  INFO 43029 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-26 11:41:37.984  INFO 43029 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2024-04-26 11:41:38.018  WARN 43029 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-26 11:41:38.056  INFO 43029 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-04-26 11:41:38.406  INFO 43029 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2024-04-26 11:41:38.408  INFO 43029 --- [restartedMain] cn.ming.smartmedic.BlogMingApplication   : Started BlogMingApplication in 5.408 seconds (JVM running for 6.659)
+2024-04-26 11:44:50.733  INFO 43029 --- [Thread-18] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2024-04-26 11:44:50.771  INFO 43029 --- [Thread-18] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-26 11:44:50.920  INFO 43029 --- [Thread-18] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2024-04-26 11:44:57.868  INFO 43292 --- [restartedMain] cn.ming.smartmedic.BlogMingApplication   : Starting BlogMingApplication on wumingyudeMacBook-Air.local with PID 43292 (/Users/wumingyu/javaPro/smartMedic/target/classes started by wumingyu in /Users/wumingyu/javaPro/smartMedic)
+2024-04-26 11:44:57.874 DEBUG 43292 --- [restartedMain] cn.ming.smartmedic.BlogMingApplication   : Running with Spring Boot v2.1.15.RELEASE, Spring v5.1.16.RELEASE
+2024-04-26 11:44:57.874  INFO 43292 --- [restartedMain] cn.ming.smartmedic.BlogMingApplication   : The following profiles are active: dev
+2024-04-26 11:44:57.889  WARN 43292 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2024-04-26 11:44:57.923  INFO 43292 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-26 11:44:57.923  INFO 43292 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-26 11:44:58.722  INFO 43292 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-04-26 11:44:58.723  INFO 43292 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-04-26 11:44:58.762  INFO 43292 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32ms. Found 0 JDBC repository interfaces.
+2024-04-26 11:44:58.773  INFO 43292 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-04-26 11:44:58.773  INFO 43292 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-26 11:44:58.780  INFO 43292 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4ms. Found 0 JPA repository interfaces.
+2024-04-26 11:44:59.909  INFO 43292 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2024-04-26 11:44:59.935  INFO 43292 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-26 11:44:59.936  INFO 43292 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2024-04-26 11:45:00.029  INFO 43292 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-26 11:45:00.029  INFO 43292 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2105 ms
+2024-04-26 11:45:00.259 ERROR 43292 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : testWhileIdle is true, validationQuery not set
+2024-04-26 11:45:00.266  INFO 43292 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2024-04-26 11:45:00.795  INFO 43292 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2024-04-26 11:45:00.832  INFO 43292 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.17.Final}
+2024-04-26 11:45:00.833  INFO 43292 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000205: Loaded properties from resource hibernate.properties: {hibernate.bytecode.use_reflection_optimizer=false, hibernate.dialect.storage_engine=innodb}
+2024-04-26 11:45:00.944  INFO 43292 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2024-04-26 11:45:01.044  INFO 43292 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2024-04-26 11:45:01.618  INFO 43292 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-26 11:45:01.681  INFO 43292 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-26 11:45:03.125  INFO 43292 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2024-04-26 11:45:03.207  WARN 43292 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-26 11:45:03.281  INFO 43292 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-04-26 11:45:04.041  INFO 43292 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2024-04-26 11:45:04.044  INFO 43292 --- [restartedMain] cn.ming.smartmedic.BlogMingApplication   : Started BlogMingApplication in 6.93 seconds (JVM running for 8.242)
+2024-04-26 11:45:21.127  INFO 43292 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-26 11:45:21.131  INFO 43292 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-04-26 11:45:21.180  INFO 43292 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 49 ms
+2024-04-26 11:45:21.405 DEBUG 43292 --- [http-nio-80-exec-1] c.ming.smartmedic.dao.NewsDao.countNews  : ==>  Preparing: select count(*) from t_sm_news WHERE is_deleted = 0 
+2024-04-26 11:45:21.418 DEBUG 43292 --- [http-nio-80-exec-1] c.ming.smartmedic.dao.NewsDao.countNews  : ==> Parameters: 
+2024-04-26 11:45:21.461 DEBUG 43292 --- [http-nio-80-exec-1] c.ming.smartmedic.dao.NewsDao.countNews  : <==      Total: 1
+2024-04-26 11:45:21.463 DEBUG 43292 --- [http-nio-80-exec-1] cn.ming.smartmedic.dao.NewsDao.listNews  : ==>  Preparing: select id,title,content,create_time as createTime,update_time as updateTime,published from t_sm_news WHERE is_deleted = 0 ORDER BY create_time DESC LIMIT ? OFFSET ? 
+2024-04-26 11:45:21.463 DEBUG 43292 --- [http-nio-80-exec-1] cn.ming.smartmedic.dao.NewsDao.listNews  : ==> Parameters: 10(Integer), 0(Integer)
+2024-04-26 11:45:21.470 DEBUG 43292 --- [http-nio-80-exec-1] cn.ming.smartmedic.dao.NewsDao.listNews  : <==      Total: 6
+2024-04-26 11:45:25.022 DEBUG 43292 --- [http-nio-80-exec-5] c.m.s.dao.DiseasesDao.countDiseases      : ==>  Preparing: select count(*) from t_sm_diseases WHERE is_deleted = 0 
+2024-04-26 11:45:25.024 DEBUG 43292 --- [http-nio-80-exec-5] c.m.s.dao.DiseasesDao.countDiseases      : ==> Parameters: 
+2024-04-26 11:45:25.053 DEBUG 43292 --- [http-nio-80-exec-5] c.m.s.dao.DiseasesDao.countDiseases      : <==      Total: 1
+2024-04-26 11:45:25.054 DEBUG 43292 --- [http-nio-80-exec-5] c.m.s.dao.DiseasesDao.listDiseases       : ==>  Preparing: select id,title,content,create_time as createTime,update_time as updateTime from t_sm_diseases WHERE is_deleted = 0 ORDER BY create_time DESC LIMIT ? OFFSET ? 
+2024-04-26 11:45:25.054 DEBUG 43292 --- [http-nio-80-exec-5] c.m.s.dao.DiseasesDao.listDiseases       : ==> Parameters: 10(Integer), 0(Integer)
+2024-04-26 11:45:25.056 DEBUG 43292 --- [http-nio-80-exec-5] c.m.s.dao.DiseasesDao.listDiseases       : <==      Total: 0
+2024-04-26 11:45:27.521 DEBUG 43292 --- [http-nio-80-exec-2] c.ming.smartmedic.dao.NewsDao.countNews  : ==>  Preparing: select count(*) from t_sm_news WHERE is_deleted = 0 
+2024-04-26 11:45:27.522 DEBUG 43292 --- [http-nio-80-exec-2] c.ming.smartmedic.dao.NewsDao.countNews  : ==> Parameters: 
+2024-04-26 11:45:27.523 DEBUG 43292 --- [http-nio-80-exec-2] c.ming.smartmedic.dao.NewsDao.countNews  : <==      Total: 1
+2024-04-26 11:45:27.523 DEBUG 43292 --- [http-nio-80-exec-2] cn.ming.smartmedic.dao.NewsDao.listNews  : ==>  Preparing: select id,title,content,create_time as createTime,update_time as updateTime,published from t_sm_news WHERE is_deleted = 0 ORDER BY create_time DESC LIMIT ? OFFSET ? 
+2024-04-26 11:45:27.523 DEBUG 43292 --- [http-nio-80-exec-2] cn.ming.smartmedic.dao.NewsDao.listNews  : ==> Parameters: 10(Integer), 0(Integer)
+2024-04-26 11:45:27.529 DEBUG 43292 --- [http-nio-80-exec-2] cn.ming.smartmedic.dao.NewsDao.listNews  : <==      Total: 6
+2024-04-26 11:45:36.395 DEBUG 43292 --- [http-nio-80-exec-3] c.m.s.dao.DiseasesDao.countDiseases      : ==>  Preparing: select count(*) from t_sm_diseases WHERE is_deleted = 0 
+2024-04-26 11:45:36.398 DEBUG 43292 --- [http-nio-80-exec-3] c.m.s.dao.DiseasesDao.countDiseases      : ==> Parameters: 
+2024-04-26 11:45:36.403 DEBUG 43292 --- [http-nio-80-exec-3] c.m.s.dao.DiseasesDao.countDiseases      : <==      Total: 1
+2024-04-26 11:45:36.405 DEBUG 43292 --- [http-nio-80-exec-3] c.m.s.dao.DiseasesDao.listDiseases       : ==>  Preparing: select id,title,content,create_time as createTime,update_time as updateTime from t_sm_diseases WHERE is_deleted = 0 ORDER BY create_time DESC LIMIT ? OFFSET ? 
+2024-04-26 11:45:36.406 DEBUG 43292 --- [http-nio-80-exec-3] c.m.s.dao.DiseasesDao.listDiseases       : ==> Parameters: 10(Integer), 0(Integer)
+2024-04-26 11:45:36.408 DEBUG 43292 --- [http-nio-80-exec-3] c.m.s.dao.DiseasesDao.listDiseases       : <==      Total: 0
+2024-04-26 11:45:37.416 DEBUG 43292 --- [http-nio-80-exec-5] c.ming.smartmedic.dao.NewsDao.countNews  : ==>  Preparing: select count(*) from t_sm_news WHERE is_deleted = 0 
+2024-04-26 11:45:37.417 DEBUG 43292 --- [http-nio-80-exec-5] c.ming.smartmedic.dao.NewsDao.countNews  : ==> Parameters: 
+2024-04-26 11:45:37.422 DEBUG 43292 --- [http-nio-80-exec-5] c.ming.smartmedic.dao.NewsDao.countNews  : <==      Total: 1
+2024-04-26 11:45:37.423 DEBUG 43292 --- [http-nio-80-exec-5] cn.ming.smartmedic.dao.NewsDao.listNews  : ==>  Preparing: select id,title,content,create_time as createTime,update_time as updateTime,published from t_sm_news WHERE is_deleted = 0 ORDER BY create_time DESC LIMIT ? OFFSET ? 
+2024-04-26 11:45:37.424 DEBUG 43292 --- [http-nio-80-exec-5] cn.ming.smartmedic.dao.NewsDao.listNews  : ==> Parameters: 10(Integer), 0(Integer)
+2024-04-26 11:45:37.448 DEBUG 43292 --- [http-nio-80-exec-5] cn.ming.smartmedic.dao.NewsDao.listNews  : <==      Total: 6
