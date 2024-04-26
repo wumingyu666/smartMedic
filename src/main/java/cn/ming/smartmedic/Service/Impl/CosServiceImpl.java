@@ -4,21 +4,35 @@ import cn.ming.smartmedic.Service.CosService;
 import cn.ming.smartmedic.config.CosClientFactory;
 import com.qcloud.cos.exception.CosClientException;
 import com.qcloud.cos.exception.CosServiceException;
-import com.qcloud.cos.model.COSObjectSummary;
-import com.qcloud.cos.model.ListObjectsRequest;
-import com.qcloud.cos.model.ObjectListing;
+import com.qcloud.cos.model.*;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
 
+import java.io.File;
 import java.util.List;
 
+import static com.qcloud.cos.demo.BucketRefererDemo.cosClient;
+
+@Slf4j
+@Service
 public class CosServiceImpl implements CosService {
 
     @Autowired
     private CosClientFactory config;
 
-    @Override
-    public void uploadImage() {
+    @Value("${smartMedicBucket}")
+    private String bucketName;
 
+    @Override
+    public String uploadImage(File file) {
+        String cosImagePath = file.getName() + "-" + System.currentTimeMillis();
+        PutObjectRequest putObjectRequest = new PutObjectRequest(bucketName, cosImagePath, file);
+        PutObjectResult res = cosClient.putObject(putObjectRequest);
+        log.info("upload image res:{}", res);
+
+        return cosImagePath;
     }
 
     public void listObjects() {

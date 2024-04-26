@@ -15,7 +15,7 @@ public interface NewsDao {
 
     List<News> listNews(Map<String, Object> con);
 
-    News getNews(Long id);
+    News getNews(BigInteger id);
 
     Integer saveNews(News news);
 

@@ -59,7 +59,7 @@ public class AdminNewsController {
     }
 
     @GetMapping("/news/{id}/input")
-    public String editinput(@PathVariable Long id, Model model) {
+    public String editinput(@PathVariable BigInteger id, Model model) {
         News news = newsService.getNews(id);
         model.addAttribute("news", news);
         return "admin/news-input";

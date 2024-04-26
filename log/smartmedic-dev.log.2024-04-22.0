@@ -1,0 +1,42 @@
+2024-04-22 22:00:59.638  INFO 15734 --- [restartedMain] cn.ming.smartmedic.BlogMingApplication   : Starting BlogMingApplication on wumingyudeMacBook-Air.local with PID 15734 (/Users/wumingyu/javaPro/smartMedic/target/classes started by wumingyu in /Users/wumingyu/javaPro/smartMedic)
+2024-04-22 22:00:59.639 DEBUG 15734 --- [restartedMain] cn.ming.smartmedic.BlogMingApplication   : Running with Spring Boot v2.1.15.RELEASE, Spring v5.1.16.RELEASE
+2024-04-22 22:00:59.640  INFO 15734 --- [restartedMain] cn.ming.smartmedic.BlogMingApplication   : The following profiles are active: dev
+2024-04-22 22:00:59.658  WARN 15734 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2024-04-22 22:00:59.663  INFO 15734 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-22 22:00:59.663  INFO 15734 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-22 22:01:00.015  INFO 15734 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-04-22 22:01:00.015  INFO 15734 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-04-22 22:01:00.025  INFO 15734 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8ms. Found 0 JDBC repository interfaces.
+2024-04-22 22:01:00.029  INFO 15734 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-04-22 22:01:00.029  INFO 15734 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-22 22:01:00.033  INFO 15734 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2ms. Found 0 JPA repository interfaces.
+2024-04-22 22:01:00.634  INFO 15734 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2024-04-22 22:01:00.649  INFO 15734 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-22 22:01:00.649  INFO 15734 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2024-04-22 22:01:00.700  INFO 15734 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-22 22:01:00.700  INFO 15734 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1037 ms
+2024-04-22 22:01:00.814 ERROR 15734 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : testWhileIdle is true, validationQuery not set
+2024-04-22 22:01:00.818  INFO 15734 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2024-04-22 22:01:01.219  INFO 15734 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2024-04-22 22:01:01.254  INFO 15734 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.17.Final}
+2024-04-22 22:01:01.255  INFO 15734 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000205: Loaded properties from resource hibernate.properties: {hibernate.bytecode.use_reflection_optimizer=false, hibernate.dialect.storage_engine=innodb}
+2024-04-22 22:01:01.309  INFO 15734 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2024-04-22 22:01:01.388  INFO 15734 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2024-04-22 22:01:01.617  INFO 15734 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-22 22:01:01.654  INFO 15734 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-22 22:01:02.440  INFO 15734 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2024-04-22 22:01:02.466  WARN 15734 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-22 22:01:02.498  INFO 15734 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-04-22 22:01:02.810  INFO 15734 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2024-04-22 22:01:02.812  INFO 15734 --- [restartedMain] cn.ming.smartmedic.BlogMingApplication   : Started BlogMingApplication in 3.459 seconds (JVM running for 5.117)
+2024-04-22 22:01:21.566  INFO 15734 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-22 22:01:21.568  INFO 15734 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-04-22 22:01:21.583  INFO 15734 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2024-04-22 22:01:57.914 DEBUG 15734 --- [http-nio-80-exec-10] c.m.s.d.U.findByUsernameAndPassword      : ==>  Preparing: select * from t_sm_user WHERE name = ? AND password = ? AND is_deleted = 0 
+2024-04-22 22:01:57.933 DEBUG 15734 --- [http-nio-80-exec-10] c.m.s.d.U.findByUsernameAndPassword      : ==> Parameters: portgas(String), 202cb962ac59075b964b07152d234b70(String)
+2024-04-22 22:01:57.969 DEBUG 15734 --- [http-nio-80-exec-10] c.m.s.d.U.findByUsernameAndPassword      : <==      Total: 1
+2024-04-22 22:06:37.820  INFO 15734 --- [Thread-17] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2024-04-22 22:06:37.824  INFO 15734 --- [Thread-17] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-22 22:06:37.848  INFO 15734 --- [Thread-17] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed

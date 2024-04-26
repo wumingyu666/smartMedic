@@ -1,5 +1,6 @@
 package cn.ming.smartmedic.web.admin;
 
+import cn.ming.smartmedic.Service.AiChatService;
 import cn.ming.smartmedic.Service.UserService;
 import cn.ming.smartmedic.config.CosClientFactory;
 import cn.ming.smartmedic.domain.User;
@@ -19,9 +20,6 @@ import javax.servlet.http.HttpSession;
 public class LoginController {
     @Autowired
     private UserService userService;
-
-    @Autowired
-    private CosClientFactory config;
 
     @GetMapping
     public String loginPage() {
