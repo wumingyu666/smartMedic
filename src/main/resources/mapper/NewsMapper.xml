@@ -29,7 +29,7 @@
     </select>
 
     <select id="listNews" parameterType="Map" resultType="cn.ming.smartmedic.domain.News">
-        select id,title,content,create_time as createTime,update_time as updateTime,published
+        select id,title,content,create_time as createTime,update_time as updateTime,published,first_picture as firstPicture
         from t_sm_news
         <where>
             <if test="title != null and title != ''">
